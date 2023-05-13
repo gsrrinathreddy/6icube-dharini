@@ -5,17 +5,19 @@ import Bangles from './components/Pages/Bangles';
 import Bracelets from './components/Pages/Bracelets';
 import Rings from './components/Pages/Rings';
 import EarRings from './components/Pages/EarRings';
-
+import Goldrings from './components/Goldrings';
 function App() {
+  const Navpages=['Bangles', 'Rings', 'Bracelets', 'EarRings']
   return (
     <div className="App">
       <BrowserRouter>
-      <Navbar/>
+      <Navbar pages={Navpages} bgcolor="lime" buttoncolor="red"/>
       <Routes>
       <Route path="Bangles" element={<Bangles/>}/>
       <Route path="Bracelets" element={<Bracelets/>}/>
       <Route path="Rings" element={<Rings/>}/>
       <Route path="EarRings" element={<EarRings/>}/>
+      <Route path="Rings/Goldrings" element={<Goldrings/>}/>
       </Routes>
       </BrowserRouter>
     </div>
