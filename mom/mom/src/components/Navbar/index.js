@@ -14,7 +14,7 @@ import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
 import {Link} from 'react-router-dom';
 
-const pages = ['Bangles', 'Rings', 'Bracelets'];
+const pages = ['Bangles', 'Rings', 'Bracelets', 'EarRings'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 function Navbar() {
@@ -116,7 +116,7 @@ function Navbar() {
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page) => (
-                <Link to={page}>
+                <Link to={page} style={{textDecoration:"none"}}>
               <Button
                 key={page}
                 onClick={handleCloseNavMenu}
