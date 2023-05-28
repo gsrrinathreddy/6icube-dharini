@@ -6,13 +6,13 @@ import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 
-export default function ReviewCard(props) {
+export default function BlogCard(props) {
     const date=props.date
     const title=props.title
     const image=props.image
     const description=props.description
   return (
-    <Card sx={{ maxWidth: 345,margin: "40px" }}>
+    <Card sx={{ maxWidth: 1000,margin: "40px" }}>
      <Typography gutterBottom variant="h6" textAlign="justify" component="div">
          {props.date}
         </Typography>
@@ -20,7 +20,7 @@ export default function ReviewCard(props) {
           {props.title}
         </Typography>
       <CardMedia
-        sx={{ height: 150 }}
+        sx={{ height: 300 }}
         date={props.date}
         title={props.title}
         image={props.image}

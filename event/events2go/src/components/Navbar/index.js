@@ -56,7 +56,7 @@ function Navbar() {
               textDecoration: 'none',
             }}
           >
-            <img src='http://buzzitsolutions.com/events/assets/front/images/logo-white.png'/>
+            <img src='http://events2go.com.au/assets/front/images/logo-white.png'/>
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>

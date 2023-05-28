@@ -12,21 +12,21 @@ export default function Home(){
   
     const home=[
         {
-            image:"http://buzzitsolutions.com/events/uploads/upcomingevents/_upcoming_1684472297.png",
+            image:"https://houseofhens.com.au/assets/House-of-Hens/Destinations-HOH/7fb1db9f3d/brisbane-at-night__FocusFillWzk4NCw5ODQsIngiLDI0NV0.jpg",
             title:"Hot Brown Honey  THE REMIX",
             date:"May 25,2023",
             time:"11Am to 12Pm",
             location:"Australia"
         },
         {
-            image:"http://buzzitsolutions.com/events/uploads/upcomingevents/_upcoming_1684239743.png",
+            image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsXUlQPdeC6QU8jYgSujjfx7D0mhwXCgzd5W8gcs1PxA&usqp=CAU&ec=48665699",
             title:"Hyderabads Biggest Weekend THEME PARTY",
             date:"May 16,2023",
             time:"11Am to 12Pm",
             location:"Opera House, Bennelong Point, Sydney NSW 2000, Australia"
         },
         {
-            image:"http://buzzitsolutions.com/events/uploads/upcomingevents/_upcoming_1684239374.png",
+            image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVsQ6cyGQM_zqc4fVYP3tBa_0ytk234bAfoT6tDSZAzQ&usqp=CAU&ec=48665699",
             title:"Hot Brown Honey THE REMIX",
             date:"May 20,2023",
             time:"11Am to 12Pm",
@@ -38,19 +38,19 @@ export default function Home(){
         {
             date:"Posted on May 18, 2023",
             title:"Eventer...",
-            image:"http://buzzitsolutions.com/events/uploads/blog/post/devim_2057839072.jpg",
+            image:"http://events2go.com.au/uploads/blog/post/devim_1407882437.jpg",
             description:"Reference site about Lorem..."
         },
         {
             date:"Posted on May 18, 2023",
             title:"First Speakers...",
-            image:"http://buzzitsolutions.com/events/uploads/blog/post/devim_854574434.jpg",
+            image:"http://events2go.com.au/uploads/blog/post/devim_2057839072.jpg",
             description:"Lorem ipsum is..."
         },
         {
             date:"Posted on May 17, 2023",
             title:"Eventer...",
-            image:"http://buzzitsolutions.com/events/uploads/blog/post/devim_1335223258.png",
+            image:"http://events2go.com.au/uploads/blog/post/devim_854574434.jpg",
             description:"Quaerat neque purus ipsum neque..."
         }
     ]
@@ -123,8 +123,8 @@ export default function Home(){
     Diversity is our strength, we would like to bring people from all walks of life to work together
     </Typography>
 
-    <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
-        <Grid xs={3}>
+    <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}marginTop="10px">
+        <Grid xs={3} backgroundColor="#b0bec5">
      <Typography variant='h6'color="purple">
         Free Events
      </Typography>
@@ -135,7 +135,7 @@ export default function Home(){
      Applicable
      </Typography>
      </Grid>
-     <Grid xs={3}>
+     <Grid xs={3} backgroundColor="#b0bec5">
      <Typography variant='h6'color="purple">
         Standard
      </Typography>
@@ -146,7 +146,7 @@ export default function Home(){
      Per paid ticket
      </Typography>
      </Grid>
-     <Grid xs={3}>
+     <Grid xs={3} backgroundColor="#b0bec5" >
      <Typography variant='h6'color="purple">
         Charities
      </Typography>
@@ -157,7 +157,7 @@ export default function Home(){
       Per paid ticket
       </Typography>
      </Grid>
-     <Grid xs={3}>
+     <Grid xs={3} backgroundColor="#b0bec5" >
      <Typography variant='h6'color="purple">
         Custom
      </Typography>
@@ -194,7 +194,7 @@ export default function Home(){
     attributes from our experts and practitioners.
     </Typography>
 
-    <Grid item xs={12} sx={{backgroundColor:"white",p: 4,marginLeft:"110px"}}>
+    <Grid item xs={12} sx={{backgroundColor:"#eeeeee",p: 4,margin:"110px"}}>
     <Grid container spacing={0}>
         {
             review.map((review)=>{
@@ -215,8 +215,8 @@ export default function Home(){
         </Typography>
         <Accordions/>
 
-        <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
-        <Grid xs={3}>
+    <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }} >
+     <Grid xs={3} >
      <Typography variant='h6'color="gray" marginTop="60px">
      Find events
      </Typography>
