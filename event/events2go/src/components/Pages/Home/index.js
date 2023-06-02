@@ -123,7 +123,10 @@ export default function Home(){
     </Typography>
 
     <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}marginTop="10px">
-        <Grid xs={3} backgroundColor="#b0bec5">
+        <Grid xs={1}>
+
+        </Grid>
+        <Grid xs={2} backgroundColor="#b0bec5">
      <Typography variant='h6'color="purple">
         Free Events
      </Typography>
@@ -134,7 +137,10 @@ export default function Home(){
      Applicable
      </Typography>
      </Grid>
-     <Grid xs={3} backgroundColor="#b0bec5">
+     <Grid xs={1}>
+
+     </Grid>
+     <Grid xs={2} backgroundColor="#b0bec5">
      <Typography variant='h6'color="purple">
         Standard
      </Typography>
@@ -145,7 +151,10 @@ export default function Home(){
      Per paid ticket
      </Typography>
      </Grid>
-     <Grid xs={3} backgroundColor="#b0bec5" >
+     <Grid xs={1}>
+
+     </Grid>
+     <Grid xs={2} backgroundColor="#b0bec5" >
      <Typography variant='h6'color="purple">
         Charities
      </Typography>
@@ -156,7 +165,10 @@ export default function Home(){
       Per paid ticket
       </Typography>
      </Grid>
-     <Grid xs={3} backgroundColor="#b0bec5" >
+     <Grid xs={1}>
+
+     </Grid>
+     <Grid xs={2} backgroundColor="#b0bec5" >
      <Typography variant='h6'color="purple">
         Custom
      </Typography>

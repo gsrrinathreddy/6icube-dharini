@@ -4,6 +4,9 @@ import AccordionDetails from '@mui/material/AccordionDetails';
 import AccordionSummary from '@mui/material/AccordionSummary';
 import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import Link from '@mui/material/Link';
+import { Button, Grid } from '@mui/material';
+import TextField from '@mui/material/TextField';
 
 export default function Accordions() {
   const [expanded, setExpanded] = React.useState(false);
@@ -94,9 +97,31 @@ export default function Accordions() {
         </AccordionDetails>
       </Accordion>
       <Typography variant="h5" marginTop="80px">
-      Still have a question?<Typography variant="h5" color="magenta"> Ask your question here</Typography>
+      Still have a question? <Link href="http://localhost:3001/Contact" color="#f50057">Ask your question here</Link>
       </Typography>
-      
+
+      <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}margin="80px" sx={{backgroundColor:"#b3e5fc"}}>
+        <Grid marginLeft="350px" >
+      <Typography variant='h4'>
+      Keep upto date with events
+      </Typography>
+      <Typography variant='h6' marginTop="20px">  
+      Events 2023 gathered the brightest minds globally. Explore new skills and
+      </Typography>
+      <Typography variant='h6' marginBottom="30px">
+      attributes from our experts and practitioners.
+      </Typography>
+      <TextField id="outlined-search" label="infoevents2go@gmail.com" type="infoevents2go@gmail.com" />
+      <Button variant='contained'>
+        Get Started
+        </Button>
+     <Typography marginTop="10px">
+      Check Out Our <space></space>
+      <Link href= "http://events2go.com.au/privacy_policy" colorspo>privacy_policy</Link> <space></space>
+      <Link href= "http://events2go.com.au/privacy_policy">Terms Of Use</Link> for more information
+      </Typography>
+      </Grid>
+      </Grid>
     </div>
   );
 }
