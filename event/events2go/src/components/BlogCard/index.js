@@ -12,7 +12,7 @@ export default function BlogCard(props) {
     const image=props.image
     const description=props.description
   return (
-    <Card sx={{ maxWidth: 1000,margin: "40px" }}>
+    <Card sx={{ maxWidth: 800,margin: "40px" }}>
      <Typography gutterBottom variant="h6" textAlign="justify" component="div">
          {props.date}
         </Typography>
@@ -20,7 +20,7 @@ export default function BlogCard(props) {
           {props.title}
         </Typography>
       <CardMedia
-        sx={{ height: 300 }}
+        sx={{ height: 400,width: 800 }}
         date={props.date}
         title={props.title}
         image={props.image}

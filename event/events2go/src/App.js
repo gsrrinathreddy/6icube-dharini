@@ -7,6 +7,8 @@ import Contact from './components/Pages/Contact';
 import Events from './components/Pages/Events';
 import Home from './components/Pages/Home';
 import Login from './components/Pages/Login';
+import SignUp from './components/Pages/SignUp';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -20,8 +22,10 @@ function App() {
       <Route path="Events" element={<Events/>}/>
       <Route path="Home" element={<Home/>}/>
       <Route path="Login" element={<Login/>}/>
+      <Route path="SignUp" element={<SignUp/>}/>
     </Routes>
     </BrowserRouter>
+    <Footer/>
     </div>
   );
 }

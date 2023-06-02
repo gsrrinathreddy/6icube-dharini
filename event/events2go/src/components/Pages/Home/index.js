@@ -6,8 +6,7 @@ import Button from '@mui/material/Button';
 import BasicTabs from '../../Tabs';
 import ReviewCard from '../../ReviewCard';
 import Accordions from '../../Accordions';
-import Avatar from '@mui/material/Avatar';
-import FacebookIcon from '@mui/icons-material/Facebook';
+
 export default function Home(){
   
     const home=[
@@ -101,7 +100,7 @@ export default function Home(){
     <Typography variant='h4' color="gray">
      Trending Events       
     </Typography>
-    <Typography variant='h6'>
+    <Typography variant='h6' margin="30px">
     Below you'll find the schedule for Events 2023. We'll keep this page regularly
     updated with all new events and sessions, so be sure to keep checking in!
     </Typography>
@@ -215,55 +214,7 @@ export default function Home(){
         </Typography>
         <Accordions/>
 
-    <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }} >
-     <Grid xs={3} >
-     <Typography variant='h6'color="gray" marginTop="60px">
-     Find events
-     </Typography>
-     <Typography>
-     Search events
-     </Typography>
-     </Grid>
-     <Grid xs={3}>
-     <Typography variant='h6'color="gray" marginTop="60px">
-     Host events
-     </Typography>
-     <Typography>
-     All features
-     </Typography>
-     <Typography>
-     Pricing
-     </Typography>
-     <Typography>
-     FAQs
-     </Typography>
-     </Grid>
-     <Grid xs={3}>
-     <Typography variant='h6'color="gray" marginTop="60px">
-     Get in touch
-     </Typography>
-     <Typography>
-     Help
-      </Typography>
-      <Typography>
-      Contact us
-      </Typography>
-     </Grid>
-     <Grid xs={3}>
-     <Typography variant='h6'color="gray" marginTop="60px">
-     Follow us on
-     </Typography>
-     <IconButton>
-     <FacebookIcon/><Avatar marginBottom="10px">in</Avatar>
-     </IconButton>
-     </Grid>
-    </Grid>
-
-    <Grid xs={12} marginRight="850px" marginTop="100px">
-        <Typography>
-        © Copyright Events2go. All Rights Reserved
-        </Typography>
-    </Grid>
+   
         </>
     )
 }
