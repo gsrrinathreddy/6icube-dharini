@@ -121,9 +121,9 @@ export default function Home(){
     <Typography variant='h4' marginTop="50px" color="purple">
     Diversity is our strength, we would like to bring people from all walks of life to work together
     </Typography>
-
+"
     <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}marginTop="10px">
-        <Grid xs={1}>
+        <Grid xs={0.5}>
 
         </Grid>
         <Grid xs={2} backgroundColor="#b0bec5">
@@ -179,6 +179,9 @@ export default function Home(){
         Contact Us
      </Button>
      </Grid>
+     <Grid xs={0.5}>
+
+     </Grid>
     </Grid>
     <Typography variant='h6' color="gray" marginTop="70px">
     All plans include access to all features. Technology, Pricing, Customer Service, and Support will be provided.
@@ -224,6 +227,7 @@ export default function Home(){
         <Typography variant='h6'>
         get insights from experts and practitioners from all around!
         </Typography>
+
         <Accordions/>
 
    

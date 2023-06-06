@@ -1,8 +1,8 @@
 import Grid from '@mui/material/Grid';
 import BlogCard from '../../BlogCard';
-import Avatar from '@mui/material/Avatar';
-import FacebookIcon from '@mui/icons-material/Facebook';
-import { IconButton, Typography } from '@mui/material';
+import { IconButton, MenuItem, Typography } from '@mui/material';
+import Divider from '@mui/material/Divider';
+
 export default function Blog(){
     const blog=[
         {
@@ -32,14 +32,46 @@ export default function Blog(){
     ]
     return(
         <>
-         <Grid item xs={12} sx={{backgroundColor:"white",p: 4,margin:"80px"}}>
-    <Grid container spacing={0}>
+        <Grid container spacing={0}>
+            
+         <Grid item xs={7} sx={{backgroundColor:"white",p: 4,margin:"80px"}}>
+
         {
             blog.map((blog)=>{
                 return <BlogCard title={blog.title}  date={blog.date} image={blog.image} description={blog.description}/>
             })
         }
         </Grid>
+        
+        <Grid xs={3}>
+        
+          <Typography variant='h5' color="purple" marginRight="300px" marginTop="150px">
+            Categories 
+          </Typography>
+
+          <MenuItem>
+          <Typography variant="inherit" marginTop="10px">
+            Reviews(2)
+            </Typography>
+        </MenuItem>
+        <Divider />
+        <MenuItem>         
+          <Typography variant="inherit">
+            Latest News (1)
+            </Typography>
+        </MenuItem>
+        <Divider />
+        <MenuItem>        
+          <Typography variant="inherit">
+            Articals (1)
+          </Typography>
+          </MenuItem>
+
+        </Grid>
+      
+        <Grid xs={2}>
+        </Grid>
+      
         </Grid>
 
    

@@ -10,7 +10,7 @@ import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
 import { Link, useNavigate } from 'react-router-dom';
-import { Grid, Tooltip } from '@mui/material';
+import { Tooltip } from '@mui/material';
 
 
 
@@ -57,7 +57,7 @@ function Navbar() {
             href="/"
             sx={{
               mr: 2,
-              display: { xs: 'none', md: 'flex', marginRight:'500px' },
+              display: { xs: 'none', md: 'flex', marginRight:'500px'},
               fontFamily: 'monospace',
               fontWeight: 700,
               letterSpacing: '.3rem',
@@ -65,7 +65,7 @@ function Navbar() {
               textDecoration: 'none',
             }}
           >
-            <img src='http://events2go.com.au/assets/front/images/logo-white.png'/>
+            <img src='http://events2go.com.au/assets/front/images/logo-white.png' height="100"/>
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
